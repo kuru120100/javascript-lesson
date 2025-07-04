@@ -114,14 +114,18 @@ console.log(x);
 
 //応用
 // Q1
-let random = Math.random(0,9);
+function getRandom(){
+  return Math.floor(Math.random() * 10);
+}
+const randomNum = getRandom();
+console.log(randomNum);
 
 // Q2
-function Time(){
+function getTime(){
   console.log('Hello World!');
 }
 
-setTimeout(Time,3000);
+setTimeout(getTime,3000);
 
 // Q3
 let num = 5;
@@ -146,10 +150,10 @@ for (let i = 0; i < mixed.length; i++){
   let item = mixed[i];
 
   if(item % 2 == 0 && typeof item ==='number'){
-  console.log('even');
-}else if(typeof item === 'number' && item % 2 != 0){
-  console.log('odd');
-}else if(typeof item != 'number'){
-  console.log('not number');
-}
+    console.log('even');
+  }else if(typeof item === 'number' && item % 2 != 0){
+    console.log('odd');
+  }else if(typeof item != 'number'){
+    console.log('not number');
+  }
 };
