@@ -54,16 +54,12 @@ const sayWorld = function(){
 sayWorld();
 
 // Q7
-user = {
-  birthday: '2000-09-27'
-};
+user.birthday = '2009-09-27';
 
 user.sayHello = function(){
   console.log('Hello!');
 };
 
-console.log(user.birthday);
-sayHello();
 
 // Q8
 let calc = {};
@@ -95,12 +91,12 @@ calc.divide = function(x,y){
 calc.subtract(10,2);
 
 // Q9
-function number(x,y){
+function remainder(x,y){
   return x % y;
 }
 let x = 5;
 let y =3;
-let result = number(x,y);
+let result = remainder(x,y);
 
 console.log(x + 'を' + y + 'で割った余りは' + result + 'です。');
 
@@ -110,7 +106,7 @@ function foo(){
 }
 console.log(x);
 
-// 関数内だけスコープが有効なため、関数内でｘを参照できていないため、エラーが起きる
+// 関数内だけスコープが有効なため、関数外でｘを参照できていないため、エラーが起きる
 
 //応用
 // Q1
