@@ -60,7 +60,6 @@ user.sayHello = function(){
   console.log('Hello!');
 };
 
-
 // Q8
 let calc = {};
 calc.add = function(x,y){
@@ -145,11 +144,14 @@ let mixed = [4,'2',5,'8','9',0,1]
 for (let i = 0; i < mixed.length; i++){
   let item = mixed[i];
 
-  if(item % 2 == 0 && typeof item ==='number'){
+  if(item % 2 === 0){
+    if(typeof item === 'number'){
     console.log('even');
-  }else if(typeof item === 'number' && item % 2 != 0){
-    console.log('odd');
-  }else if(typeof item != 'number'){
+    }else{
+    console.log('add');
+    }
+  }
+  if(typeof item !== 'item'){
     console.log('not number');
   }
 };
